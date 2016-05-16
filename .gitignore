@@ -23,6 +23,6 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
+*.VC.db
