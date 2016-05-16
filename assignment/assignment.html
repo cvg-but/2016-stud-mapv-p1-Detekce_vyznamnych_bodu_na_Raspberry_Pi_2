@@ -1,0 +1,98 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
+
+  <title>Computer Vision</title>
+
+  <link REL="SHORTCUT ICON" HREF="../../_img/logo_MIDAS.ico">
+
+  <base target="_parent">
+
+  <style type="text/css">
+    p {text-align: justify;}
+  </style>
+
+  <script type="text/javascript">
+    function resize_blocks() {
+      document.getElementById("CONTENT").style.height = document.body.clientHeight-100;
+      document.getElementById("FOOT").style.top       = document.body.clientHeight-18;
+    }
+    
+  </script>
+  
+  <script type="text/javascript" src="./carousel/swfobject.js"></script>
+</head>
+
+<body bgcolor="#A0A0A0" background="../../_img/bckg.bmp" text="#000000" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table width="100%" border="0" cellpadding="10">
+  <tr>
+    <td align="left">
+    <H1>Projekt 5 - Detekce významných bodů na Raspberry Pi 2 (vedoucí D. Davídek)</H1>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="left">
+      <H2>Zadání</H2>
+      <p>
+Cílem projektu je implementovat algoritmy pro detekci významných bodů, jejich popis a korespondenci ve dvou obrazech na výpočetním modulu <em>Raspberry Pi 2</em> s využitím alespoň dvou algoritmů. Ve výsledcích práce je nutné provést diskuzi na téma výhod a nevýhod jednotlivých algoritmů a porovnat je s jedním dalším ne nutně implementovaným algoritmem. Diskuze typu a vlastností scény a charakteru předlohy vhodné pro robustní detekci a korespondenci pomocí jednotlivých algoritmy s návazností na výstupy realizovaných algoritmů (ne/invariantnost vůči geometrickým a jasovým transformacím). 
+	  </p>
+
+
+Software:
+<ul>
+	<li>V rámci linuxové distribuce Raspbian rozchoďte knihovny pro zpracování obrazu OpenCV 3.X <sup>[1]</sup></li>
+	<li>Jako programovací jazyk využijte C/C++ nebo Python</li>
+</ul>
+Vstupy:
+<ul>
+	<li>Osvětlovací soustava a snímací aparatura dle vlastního návrhu</li>
+	<li>Raspberry Pi 2 s kamerovým modulem</li>
+</ul>
+Výstupy:
+<ul>
+	<li>Alespoň dva algoritmy pro korespondenci významných bodů obrazu z kamery a předlohy</li>
+	<li>Snaha o nízkou výpočetní náročnost - jednotky FPS</li>
+	<li>Periodicky vykreslovaný obrazový výstup z kamery rozšířený o obraz předlohy
+<ul>
+	<li>minimum: zobrazené významné body v obou obrazech propojené v složeném obrazu čarou</li>
+	<li>vykreslení perspektivně zkresleného bounding-boxu předlohy do obrazu z kamery</li>
+</ul>
+</li>
+</ul>
+
+
+    </td>
+  </tr>
+
+  <tr>
+    <td align="left">
+      <H2>Obrazy</H2>
+      Ilustrace 1: Ukázka vstupního obrazu (vlevo) a výstupní matice (vpravo schematiocky)
+	  <div align="left">
+		<img src="feature_match.png" alt="" width="30%" border="0" />
+      </div>
+	</td>
+  </tr>
+  <tr>
+	<td align="left">
+<h2>Klíčová slova</h2>
+feature detection, feature extraction, feature matching, opencv, raspberry pi
+
+	</td>
+  </tr>
+  <tr>
+	<td align="left">
+
+<h2>Odkazy</h2>
+[1] <a href="http://www.pyimagesearch.com/2015/10/26/how-to-install-opencv-3-on-raspbian-jessie/">Install OpenCV 3 (optionally with Python) on Raspbian</a>
+
+	</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
